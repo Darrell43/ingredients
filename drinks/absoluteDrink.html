@@ -12,21 +12,19 @@
 
 <body>
 
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="http://assets.absolutdrinks.com/api/addb-0.5.2.js"></script>
     <script type="text/javascript">
         // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
-        
-        var queryURL = "http://assets.absolutdrinks.com/api/addb-0.5.2.js"
-        
-        //"https://addb.absolutdrinks.com/docs/signup/show/16770?apiKey=bfdb7370601d41f1b961fded831fc00b";
-     
-        $.ajax(
-            {
-             url: queryURL,
-             method: "GET"
-            })
 
+        var queryURL = "https://addb.absolutdrinks.com/docs/drinks/16770?apiKey=bfdb7370601d41f1b961fded831fc00b"
+
+        //"https://addb.absolutdrinks.com/docs/signup/show/16770?apiKey=bfdb7370601d41f1b961fded831fc00b";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
     </script>
 
 
